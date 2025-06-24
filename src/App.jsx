@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-      <div className=' flex flex-col items-center bg-blue text-white  text-center  '>
+      <div className=' flex flex-col items-center bg-blue text-white  text-center h-screen '>
      <TicTacToe />
     </div>)
   
