@@ -1,16 +1,12 @@
 import './App.css'
-import { Button } from './components/buttons'
+import { TicTacToe } from './components/TIcTacToe'
 
 function App() {
 
 
   return (
-      <div className=' flex justify-center'>
-      <Button />
-      <Button />
-      <Button />
-      <Button />
-      
+      <div className=' flex flex-col items-center bg-blue text-white  text-center  '>
+     <TicTacToe />
     </div>)
   
 }
