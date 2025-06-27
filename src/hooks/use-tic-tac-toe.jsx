@@ -22,20 +22,22 @@ export const useTicTacToe = () => {
         for(let i=0;i<WinningPatters.length;i++){
             const [a,b,c]=WinningPatters[i];
             
-            if(board[a]&& board[a]===board[b] && board[a]===board[c] ){
+            
+            if(board[a] && board[a]===board[b] && board[a]===board[c] ){
                 
-                console.log(board[a]);
-                
+              
                 return board[a];
             }
         }
         return null;
     };
 
+    
+
     const handleClick = (index) => {
         const winner = calculateWinner(board);
-        console.log(winner);
-        if (winner || board[index]) {
+    
+        if (winner ) {
             return
         };
 
@@ -54,7 +56,7 @@ export const useTicTacToe = () => {
             return `its a draw`;
         }
 
-        return `Player ${isXNext?"X":"O"} Move`;
+        return `Player ${isXNext?"X":"O"}'s Move`;
     };
 
     const resetGame = () => {

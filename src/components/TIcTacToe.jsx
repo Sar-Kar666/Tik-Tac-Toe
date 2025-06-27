@@ -1,4 +1,4 @@
-import { useTicTacToe } from "./hooks/use-tic-tac-toe";
+import { useTicTacToe } from "../hooks/use-tic-tac-toe";
 
 
 
