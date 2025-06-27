@@ -1,5 +1,69 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme{
     --color-blue:#23272f;
+}
+
+body {
+  font-family: sans-serif;
+   dark:bg-gray-800 ;
+    dark:text-white;
+ 
+}
+
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+    
+    
+    font-size: 50px;
+
+}
+
+.status {
+    width: max-content;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.board {
+    padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  font-size: 36px;
+  border: 2px solid grey;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.reset-button {
+    cursor: pointer;
+    height: 70px;
+    width:200px;
+  padding: 5px 10px;
+  border-width: 1px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 30px;
+
 }
